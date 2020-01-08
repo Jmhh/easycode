@@ -353,3 +353,20 @@
     }
     fliterShuffle(arr)
 }
+
+{
+    //28 类数组转数组
+    let arr = Array.prototype.slice.call(arguments)
+    //或者 let arr = [].slice.call(arguments) / Array.from(arguments);
+}
+
+{
+    //29 切割数组
+    let result = [];
+    let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let chunk = 4; //每3个分一组
+    for (let i = 0, j = data.length; i < j; i += chunk) {
+        result.push(data.slice(i, i + chunk));
+    }
+    //console.log(result);
+}
